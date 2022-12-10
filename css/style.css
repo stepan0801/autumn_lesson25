@@ -1,0 +1,106 @@
+@import "reset.css";
+/* =================шрифти===================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+body{font-family: "Lato";
+font-style: normal;
+color: #424551;
+	
+}
+.wrapper{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper>main {
+flex-grow: 1;
+}
+/* ============================Обмежуючий контейнер=================================== */
+[class*="__container"]{
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.page {
+	background-color: rgb(39, 39, 212);
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+.dom__container {
+	background-color: rgb(88, 32, 218);
+	color: coral;
+	border: 2px solid black;
+	padding: 15px;
+	font-size: 18px;
+}
+.dom__main-tittle {
+	max-width: 300px;
+	font-size: 26px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+
+
+.page__search {}
+
+.search {}
+.search__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+	background-color: aqua;
+	padding: 15px;
+}
+.search__content {}
+
+.content {
+	display: none;
+}
+.search__container._active .content{
+	display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding-top: 8px;
+}
+
+.content__form {}
+.content__text {}
+.content__about {
+	font-size: 20px;
+	font-weight: 700;
+	padding-left: 10px;
+}
+
+.form {}
+.form__main {}
+.form__input {
+	width: 700px;
+	height: 40px;
+	font-size: 22px;
+	padding: 5px 20px;
+	outline: none;
+	border-radius: 35px;
+	background-color: antiquewhite;
+}
+.form__input:hover{
+	border: 1px solid gray;
+	box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.493);
+}
+
+.search__image {}
+.search__picture{
+	width: 100%;
+}
+.search__picture img:hover{
+	transform: scale(1.2);
+}
